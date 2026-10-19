@@ -75,7 +75,8 @@
 <p class="description">{{ description | escape }}</p>
 {%- endif %}
 {%- if owner != "" %}
-<p class="owner">{{ t.belongs_to | escape | replace: "{owner}", owner_html }}</p>
+{%- assign belongs_html = t.belongs_to | escape | replace: "{owner}", owner_html %}
+<p class="owner">{{ belongs_html }}</p>
 {%- endif %}
 <div class="message">
 {{ message_html }}
