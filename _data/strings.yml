@@ -1,7 +1,7 @@
 # Fixed texts of the page, one block per language.
 # You only need to edit this file to add a language: copy the "en" block,
-# change its key (e.g. "fr") and translate the values. Keep the
-# placeholders in {braces} as they are: they are filled in automatically.
+# change its key (e.g. "fr") and translate the values. Keep every line, and
+# keep the placeholders in {braces} as they are: they are filled in automatically.
 #   {title} -> the item's title        {id} -> the item's address, e.g. keys
 #   {owner} -> owner_name from settings
 # If a language key is "no" (Norwegian), write it in quotes: YAML 1.1

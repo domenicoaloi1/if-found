@@ -7,6 +7,10 @@
 # GitHub Pages would add its default theme and its stylesheet.
 theme: null
 
+# A YAML mistake between the --- lines of an item stops the update
+# (red cross in the Actions tab) instead of publishing a broken page.
+strict_front_matter: true
+
 # Each file in _items/ becomes a page: _items/keys.md -> /keys
 collections:
   items:

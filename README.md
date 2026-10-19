@@ -85,7 +85,7 @@ Contact types:
 | `whatsapp` | `number` | `"+<country code> <number>"`, spaces are fine |
 | `form` | `action` | `"https://formspree.io/f/…"`, see [Using a form](#using-a-form) |
 
-Keep the indentation exactly as it is, and put values in `"quotes"`, phone numbers especially. A contact that still has its example value is never shown to the finder.
+Keep the indentation exactly as it is, and put values in `"quotes"`, phone numbers especially: without quotes, a number that does not start with `+` can come out wrong. A contact that still has its example value is never shown to the finder.
 
 If a quick answer matters (a pet, a person who may need help), put `phone` or `whatsapp` first: an email or a form can take hours to be read.
 
@@ -95,8 +95,8 @@ Each file in the `_items/` folder is one item, and its file name is the item's a
 
 - Start by editing the example `_items/keys.md` for your first item, or delete it: otherwise `/keys` stays online with the example text.
 - To add an item, open `_items/keys.md`, copy its content, then use **Add file → Create new file** in the `_items/` folder and give it a new name ending in `.md`, for example `backpack.md`.
-- The file must start with a `---` line, and the item's fields end at a second `---` line. Without them the page is not created, and the address shows the generic page.
-- Between the two `---` lines: `title` (the item's name, shown to the finder and used in the email subject) and an optional `description` (to help the finder recognise it, never personal details). Write "Blue backpack", not "Sofia's backpack".
+- The file must start with a `---` line, and the item's fields end at a second `---` line. Without them the page is not created (the file is published as plain text), and the address shows the generic page.
+- Between the two `---` lines: `title` (the item's name, in `"quotes"`, shown to the finder and used in the email subject) and an optional `description` (to help the finder recognise it, never personal details). Write "Blue backpack", not "Sofia's backpack".
 - Below the second `---` line: an optional message for this item only. Leave it empty to use `default_message`.
 - Replacing an item (a new ball, a new set of keys)? Keep the same file name and change only `title` and `description`: the old tag, or a new one with the same address, keeps working.
 - A tag you give to someone else still leads to your page: the finder contacts you, not them. For their own contacts, they need their own copy of this template.
@@ -107,7 +107,7 @@ Choosing the file name:
 - Many similar items: add a number, for example `ball-07` or `bib-12`.
 - For a pet, use a generic word like `dog`, not its name, and do not use its name in `title` either: a stranger who knows the name can call the pet.
 - Never name an item `index` or `404`: those names are taken.
-- Never write `{{` or `{%` in a message: they break the site update.
+- Never write `{{` or `{%` in a message: they break the site update, or the text around them disappears.
 
 ### 5. Check your pages
 
@@ -167,7 +167,7 @@ The message goes through that service, so its rules and its privacy policy apply
 
 ## Adding a language
 
-The fixed texts of the page are in `_data/strings.yml`, one block per language. Copy the `en` block, change its key (for example `fr`), translate the values, and set `language: "fr"` in `_data/settings.yml`. Keep the `{title}`, `{id}` and `{owner}` placeholders as they are.
+The fixed texts of the page are in `_data/strings.yml`, one block per language. Copy the `en` block, change its key (for example `fr`), translate the values, and set `language: "fr"` in `_data/settings.yml`. Keep the `{title}`, `{id}` and `{owner}` placeholders as they are. Keep every line of the block: a missing line leaves an empty text or button on the page, or makes the update fail.
 
 ## Good to know
 
