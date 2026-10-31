@@ -116,7 +116,7 @@ After every change:
 1. Open the **Actions** tab and wait for the latest run to finish (usually a minute or two). A green check means the site is updated.
 2. Open the item's address and check that it shows what you expect. If it still shows the old version, reload it after a few minutes.
 
-**If the run shows a red cross, the update failed and the old version of the site stays online**, old contacts included. Open the failed run to read the error. It is usually a YAML mistake: a missing quote, a wrong indentation, or a tab instead of spaces.
+**If the run shows a red cross, the update failed and the old version of the site stays online**, old contacts included. GitHub usually also emails you when a run fails. To read the error, open the failed run, click the **build** job and open the **Build with Jekyll** step: near the end, a line with `Error` or `Exception` names the file with the mistake (in `_items/` or `_data/`) and usually the line. Most often it is a YAML mistake: a missing quote, a wrong indentation, or a tab instead of spaces.
 
 ## Write the NFC tag
 
