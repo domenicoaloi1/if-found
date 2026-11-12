@@ -2,7 +2,7 @@
 
 Lost-and-found pages for the NFC tags on your things, hosted for free on GitHub Pages.
 
-> **Status:** early version, not yet tested end to end on real phones and tags. Check your own pages and tags before relying on them.
+> **Status:** a small personal project that I use on my own things. The pages, the tags and the email and WhatsApp buttons were tested on Android phones and iPhones. I've tested the phone button on Android only, but it should work the same way on an iPhone. The web form and locking a tag have not been tested. Check your own pages and tags before relying on them.
 
 Stick an NFC tag on your keys, backpack or bike. Whoever finds it holds their phone near the tag, a web page opens, and the page tells them how to reach you. The finder needs no app and no account. You need no server, no paid service and no code: the setup is done in the browser, and the tags are written with a free phone app.
 
