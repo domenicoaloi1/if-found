@@ -23,6 +23,13 @@ One page per item, for example `https://<username>.github.io/if-found/keys`:
 
 Pages are in English or Italian, look right in light and dark mode, and work without JavaScript. They load nothing from other websites and ask search engines not to list them.
 
+<p>
+  <img src=".github/images/keys-light.png" width="260" alt="The example item page at phone size, in light mode. The title “You found: Keys”, a short description, the owner's first name and a message, then three buttons, each with its number or address below: Message on WhatsApp, Call, Send an email.">
+  <img src=".github/images/keys-dark.png" width="260" alt="The same page in dark mode.">
+</p>
+
+*The example item with made-up contacts, at phone size, in light and dark mode.*
+
 `https://<username>.github.io/if-found/` shows a generic page with your contacts. So does any address that does not match an item, for example a typo or a tag you wrote before adding its item. A finder never gets a blank page.
 
 ## Privacy first: read this before you start
@@ -177,7 +184,7 @@ The fixed texts of the page are in `_data/strings.yml`, one block per language. 
 - The pages themselves collect nothing: no tracking, no statistics, no location. You only learn that someone found your item when they write to you. GitHub, which hosts the pages, logs visitors' IP addresses for security, as most websites do; you cannot see them.
 - From time to time, check that your contacts still work. An old alias or a changed number makes every tag useless.
 - **Other hosts.** GitHub Pages is the only setup described here. The pages are a standard Jekyll site whose code does not depend on GitHub, so other static hosts that can build Jekyll should work too, as long as they serve `keys.html` at `/keys` and `404.html` for unknown addresses. You will need to add your own build settings (a `Gemfile` and `jekyll build`). Choose your host before writing your tags: moving later changes every address, so every tag would need rewriting, unless you use a domain of your own and keep it renewed.
-- You only edit `_data/settings.yml` and the files in `_items/` (and `_data/strings.yml` to add a language). The other files make the pages work: `_layouts/`, `_includes/`, `_config.yml`, `index.html` and `404.html`.
+- You only edit `_data/settings.yml` and the files in `_items/` (and `_data/strings.yml` to add a language). The other files make the pages work: `_layouts/`, `_includes/`, `_config.yml`, `index.html` and `404.html`. `.github/images/` only holds the pictures of this README.
 
 ## License
 
